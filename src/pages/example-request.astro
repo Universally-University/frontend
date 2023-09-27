@@ -7,9 +7,10 @@ const response = await fetch(
 const data = await response.json()
 ---
 
+<!-- Astro uses file-based routing so this page is exposed at /example-request -->
 <Layout title="Welcome to Astro.">
 	<main class="bg-grey">
-		<h1 class="text-white">This is an example GET request to http://jsonplaceholder.com.typicode.com/posts/1/comments</h1>
+		<h1 class="text-white">This is an example GET request to https://jsonplaceholder.com.typicode.com/posts/1</h1>
         <p class="text-white">
 			{JSON.stringify(data)}
 		</p>
